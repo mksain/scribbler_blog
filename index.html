@@ -20,10 +20,9 @@
 			</div>
 			<div class="main">
 				<a href="" class="btn btn-warning my-2 my-sm-0">All Post</a>
-				<a href="" class="btn btn-warning my-2 my-sm-0">Create Post</a>
+				<a href="" class="btn btn-warning my-2 my-sm-0" data-toggle="modal" data-target="#NewPostModal">Create Post</a>
 			</div>
 			<div>
-
 				<!-- Sign In Modal -->
 				<div class="modal fade" id="SignInModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 					<div class="modal-dialog">
@@ -50,7 +49,6 @@
 									
 									<button type="submit" class="btn btn-success btn-lg btn-block">Sign In</button>
 								</form>
-
 							</div>
 							<div class="modal-footer">
 								<label>Not a Member ?</label>
@@ -59,10 +57,7 @@
 						</div>
 					</div>
 				</div>
-
 				<!-- Sign Up Modal -->
-
-
 				<div class="modal fade" id="SignUpModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 					<div class="modal-dialog">
 						<div class="modal-content">
@@ -78,22 +73,56 @@
 								<form>
 									<div class="form-group">
 										<label for="exampleInputEmail1">Full Name</label>
-										<input type="text" placeholder="Enter Full Name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+										<input type="text" placeholder="Enter Full Name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required="">
 									</div>
 									<div class="form-group">
 										<label for="exampleInputEmail1">Username</label>
-										<input type="text" placeholder="Enter UserName" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+										<input type="text" placeholder="Enter UserName" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required="">
 									</div>
 									<div class="form-group">
 										<label for="exampleInputPassword1">Password</label>
-										<input type="password" placeholder="Enter Password" class="form-control" id="exampleInputPassword1">
+										<input type="password" placeholder="Enter Password" class="form-control" id="exampleInputPassword1" required="">
 									</div>
 									<div class="form-group">
 										<label for="exampleInputPassword2">Confirm Password</label>
-										<input type="password" placeholder="Confirm Password" class="form-control" id="exampleInputPassword2">
+										<input type="password" placeholder="Confirm Password" class="form-control" id="exampleInputPassword2" required="">
 									</div>
 									
 									<button type="submit" class="btn btn-success btn-lg btn-block">Sign Up</button>
+								</form>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+				<!-- Create new post modal -->
+				<div class="modal fade" id="NewPostModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog" style="    max-width: 700px;">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="exampleModalLabel">Pen Your Post</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<!-- new post form -->
+								<form>
+									
+									<div class="form-group">
+										<label for="exampleInputEmail1">Title</label>
+										<input type="text" class="form-control" style="width: 40%;"id="exampleInputEmail1" aria-describedby="emailHelp">
+									</div>
+									<div class="form-group">
+										<label for="exampleInputPassword1">Content</label>
+										<textarea class="form-control" id="exampleInputPassword1" style="height: 180px;"></textarea> 
+									</div>
+									
+									<div class="create-post-btn">
+										
+										<button type="submit" class="btn btn-success">Create</button>
+									</div>
+									
 								</form>
 							</div>
 							
