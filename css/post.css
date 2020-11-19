@@ -2,6 +2,10 @@
 {
 margin-right: 10px;
 }
+.heading
+{
+   font-family: 'Bilbo Swash Caps';font-size: 22px;
+}
 .container .row .col h2
 {
 	text-align: center;

@@ -6,6 +6,10 @@ background-color: #e8ab21;
 {
 margin-right: 10px;
 }
+.heading
+{
+   font-family: 'Bilbo Swash Caps';font-size: 22px;
+}
 /*card layouts*/
 .left
 {
